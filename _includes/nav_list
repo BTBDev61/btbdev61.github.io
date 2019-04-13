@@ -14,7 +14,7 @@
           {% else %}
             {% assign nav_url = nav.url | relative_url %}
           {% endif %}
-
+          {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
           <a href="{{ nav_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
         {% else %}
           <span class="nav__sub-title">{{ nav.title }}</span>
