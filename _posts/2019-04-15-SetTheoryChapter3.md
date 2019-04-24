@@ -1,5 +1,5 @@
 ---
-title: "The emptyset Set, Extensionality, and Seperation"
+title: "The Empty Set, Extensionality, and Seperation"
 categories:
   - Mathematics
 tags:
