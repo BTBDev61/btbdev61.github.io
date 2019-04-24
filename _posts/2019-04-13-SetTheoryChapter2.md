@@ -36,7 +36,7 @@ Let us now consider the process of *logical deduction*.
 
 Any first-order logic theory is specified by the *language* $L$ of its formulas, and by a set $\Gamma$ of *axioms*, that is a set $\Gamma$ of formulas in the language $L$ .
 
-Given any such theory with axioms $\Gamma$ , first-order logic provides a finite set of *logical inference rules* that allow us to derive all the theorems of the theory $\Gamma$ . Using these inference rules we can construct *proofs*, which show how we can reason logically from the axioms $\Gamma$ to obtain a given theorem $\phi​$ by finite application of the rules.
+Given any such theory with axioms $\Gamma$ , first-order logic provides a finite set of *logical inference rules* that allow us to derive all the theorems of the theory $\Gamma$ . Using these inference rules we can construct *proofs*, which show how we can reason logically from the axioms $\Gamma$ to obtain a given theorem $\phi$ by finite application of the rules.
 
 If a formula $\phi$ can be proved from the axioms $\Gamma$ by such a finite number of logical steps, we use the notation $\Gamma \vdash  \phi$ , read, $\Gamma$ *proves* (or entails) $\phi$ , and call $\phi$ a *theorem* of $\Gamma$.
 
