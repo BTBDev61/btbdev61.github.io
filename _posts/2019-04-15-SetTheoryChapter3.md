@@ -54,7 +54,7 @@ The restriction imposed by separation axiom consists in requiring the quantifica
 
 If *A* is a set and $\phi$ is a set theory formula having *x* as its only free variable, then we can use $\phi$ to define the subset *B* of *A* whose elements are all the elements of *A* that satisfy the formula $\phi$ .
 
-{$x\in A | \phi}$}
+{$x\in A | \phi$}
 
 In particular, formulas $\phi$ ans $\phi'$ that are *logically equivalent* (for example, $\phi \rightarrow \phi'$ and $\neg \phi \vee \phi'$ are logically equivalent formulas) always define by separation the same subset of the given set *A*, that is, if $\phi$ and $\phi'$ are logically equivalent, we always have the equality of sets {$x\in A | \phi$} = {$x\in A | \phi'$}.
 
