@@ -1,5 +1,5 @@
 ---
-title: "The Empty Set, Extensionality, and Seperation"
+title: "The emptyset Set, Extensionality, and Seperation"
 categories:
   - Mathematics
 tags:
@@ -10,9 +10,9 @@ last_modified_at: 2018-07-01T13:00:00+09:00
 
 ## The Empty Set
 
-The simplest, most basic axiom, the *empty set axiom* can be captured by the following set theory formula, which we will refer to as the $\empty$ axiom:
+The simplest, most basic axiom, the *empty set axiom* can be captured by the following set theory formula, which we will refer to as the $\emptyset$ axiom:
 
-$\empty$              ($\exists x$ )($\forall y$) $y \notin x$.
+$\emptyset$              ($\exists x$ )($\forall y$) $y \notin x$.
 
 In plain english, we could say
 
@@ -32,7 +32,7 @@ $(\forall x, y)((\forall z)(z\in x \Leftrightarrow  z\in y)\Rightarrow x=y)$
 
 where it is enough to have the implication $\Rightarrow$ in the formula, instead of the equivalence $\Leftrightarrow$, because if two sets are equal, then logical reasoning alone ensures that they must have the same elements, that is, we get the other implication $\Leftarrow$ for free, so that it needs not be explicitly stated in the axiom.
 
-Note that extentsionality makes sure that our $\empty$ notation for the empty set is unambiguous, since there is only one such set. Indeed, suppose that we were to have two empty sets, say $\empty_1$ and $\empty_2$. We have the equivalence $(\forall z)(z \in \empty_1 \Leftrightarrow z\in \empty_2)$. But then forces the equality $\empty_1=\empty_2$.
+Note that extentsionality makes sure that our $\emptyset$ notation for the empty set is unambiguous, since there is only one such set. Indeed, suppose that we were to have two empty sets, say $\emptyset_1$ and $\emptyset_2$. We have the equivalence $(\forall z)(z \in \emptyset_1 \Leftrightarrow z\in \emptyset_2)$. But then forces the equality $\emptyset_1=\emptyset_2$.
 
 The axiom of extensionality is intimately connected with the notion of a subset. Given two sets, $A$ and $B$, we say that $A$ is subset of $B$, denoted $A\subseteq B$, if and only if every element of A is an element of B.
 
@@ -54,9 +54,9 @@ The restriction imposed by separation axiom consists in requiring the quantifica
 
 If *A* is a set and $\phi$ is a set theory formula having *x* as its only free variable, then we can use $\phi$ to define the subset *B* of *A* whose elements are all the elements of *A* that satisfy the formula $\phi$ .
 
-{$x\in A | \phi$}
+{$x\in A \| \phi$}
 
-In particular, formulas $\phi$ ans $\phi'$ that are *logically equivalent* (for example, $\phi \rightarrow \phi'$ and $\neg \phi \vee \phi'$ are logically equivalent formulas) always define by separation the same subset of the given set *A*, that is, if $\phi$ and $\phi'$ are logically equivalent, we always have the equality of sets {$x\in A | \phi$} = {$x\in A | \phi'$}.
+In particular, formulas $\phi$ ans $\phi'$ that are *logically equivalent* (for example, $\phi \rightarrow \phi'$ and $\neg \phi \vee \phi'$ are logically equivalent formulas) always define by separation the same subset of the given set *A*, that is, if $\phi$ and $\phi'$ are logically equivalent, we always have the equality of sets {$x\in A \| \phi$} = {$x\in A \| \phi'$}.
 
 The precise formalization of seperation axiom is as an *axiom sheme* parameterized by all set theory formulas $\phi$ whose only free variable is *x*. For any such $\phi$ the separation axiom scheme adds the formula
 
