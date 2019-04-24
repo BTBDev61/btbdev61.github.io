@@ -14,7 +14,7 @@ The simplest, most basic axiom, the *empty set axiom* can be captured by the fol
 
 $\empty$              ($\exists x$ )($\forall y$) $y \notin x$.
 
-In plain english, we could say 
+In plain english, we could say
 
 >  "There is a set that has no elements."
 
@@ -38,7 +38,7 @@ The axiom of extensionality is intimately connected with the notion of a subset.
 
 $ x\subseteq y \Leftrightarrow (\forall z)(z\in x \Rightarrow z\in y)$
 
-The above notation allows us to rephrase the Ext axiom as the implication 
+The above notation allows us to rephrase the Ext axiom as the implication
 
 $(\forall x, y)((x\subseteq y \wedge y\subseteq x)\Rightarrow x=y)$
 
@@ -54,7 +54,7 @@ The restriction imposed by separation axiom consists in requiring the quantifica
 
 If *A* is a set and $\phi$ is a set theory formula having *x* as its only free variable, then we can use $\phi$ to define the subset *B* of *A* whose elements are all the elements of *A* that satisfy the formula $\phi$ .
 
-$\{{x\in A | \phi}\}$
+{$x\in A | \phi}$}
 
 In particular, formulas $\phi$ ans $\phi'$ that are *logically equivalent* (for example, $\phi \rightarrow \phi'$ and $\neg \phi \vee \phi'$ are logically equivalent formulas) always define by separation the same subset of the given set *A*, that is, if $\phi$ and $\phi'$ are logically equivalent, we always have the equality of sets {$x\in A | \phi$} = {$x\in A | \phi'$}.
 
@@ -71,4 +71,3 @@ The separation axiom is sometimes called the *subset axiom*.
 Reference.
 
 * José Meseguer. (2013). Set Theory and Algebra in Computer Science A Gentle Introduction to Mathematical Modeling.
-
