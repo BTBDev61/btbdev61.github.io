@@ -21,7 +21,7 @@ Of course, by extensionality, the order of the elements does not matter.
 
 What about ***ordered pairs***? Following an idea of Kuratowski, we can *define* an ordered pair (x, y) as a special kind of unordered pair by means of the defining equation.
 
-$(x, y) = ${{$x$}, {$x, y$}}.
+$(x, y) = \{\{x\}, \{x, y\}\}$.
 
 A key property of ordered pairs is a form of extensionality for such pairs, namely, the following
 
@@ -29,7 +29,7 @@ A key property of ordered pairs is a form of extensionality for such pairs, name
 >
 > $(x, y) = (x', y') \Leftrightarrow (x = x' \vee y = y')$
 
-One could reasonably wish to distinguish between the *abstract concept* of an ordered pair $(x, y)$, and a *concrete representation* of that concept, such as the set {{$x$}, {$x, y$}}. Lemma 1 gives strong evidence that this particular choice of representation faithfully models the abstract notion.
+One could reasonably wish to distinguish between the *abstract concept* of an ordered pair $(x, y)$, and a *concrete representation* of that concept, such as the set $\{\{x\}, \{x, y\}\}$. Lemma 1 gives strong evidence that this particular choice of representation faithfully models the abstract notion.
 
 ---
 

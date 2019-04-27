@@ -56,7 +56,7 @@ Even though in a naive, unreflective way of doing mathematics the existence of t
 
 > There is a successor set
 
-$(\exist y)(\emptyset \in y \wedge (\forall x \in y)((x\cup \{x\})\in y))$
+$(\exists y)(\emptyset \in y \wedge (\forall x \in y)((x\cup \{x\})\in y))$
 
 Note that the successor set *y* asserted to exist by this axiom is not unique: there can be many successor sets.
 
@@ -64,30 +64,30 @@ Note that the successor set *y* asserted to exist by this axiom is not unique: t
 
 * If $S$ is a successor set, then the set of all successor sets $S'$ such that $S' \subseteq S$ can be precisely defined as the following subset of $\mathcal{P}(S)$
 
-  $\{S'\in \mathcal{P}(S) | (\emptyset \in S' \wedge (\forall x \in S')((x\cup\{x\})\in S'))\}$
+  $\{S'\in \mathcal{P}(S) \| (\emptyset \in S' \wedge (\forall x \in S')((x\cup\{x\})\in S'))\}$
 
 * This set is of course nonempty (S belongs to it) and its intersection
 
-  $\bigcap \{S'\in \mathcal{P}(S) | (\emptyset \in S' \wedge (\forall x \in S')((x\cup \{x\})\in S'))\}$
+  $\bigcap \{S'\in \mathcal{P}(S) \| (\emptyset \in S' \wedge (\forall x \in S')((x\cup \{x\})\in S'))\}$
 
   is a successor set.
 
 * If $X$ is  a set having an element $z\in X$ such that for all $x\in X $ we have $z\subseteq x$, then $\bigcap X = z$
 
-We can then use these easy facts to define the set $\N$ of the natural numbers. Let $S$ be a successor set, which we know it exists because of the axiom. We define $\N$ as the intersection:
+We can then use these easy facts to define the set $\mathbb{N}$ of the natural numbers. Let $S$ be a successor set, which we know it exists because of the axiom. We define $\mathbb{N}$ as the intersection:
 
-$\N = \bigcap\{S'\in \mathcal{P}(S) | \emptyset \in S' \wedge (\forall x \in S')((x\cup \{x\})\in S')\}$
+$\mathbb{N} = \bigcap \{S'\in \mathcal{P}(S) \| \emptyset \in S' \wedge (\forall x \in S')((x\cup \{x\})\in S')\}$
 
 which we know is a successor set
 
 The key question, of course is the *uniqueness* of this definition.
 
-Suppose we had chosen a different successor set $T$ and had used the same construction to find its smallest successor subset. $S\cap T$ is also a successor set. And, since $S\cap T \subseteq S$,this implies that $\N \subseteq (S\cap T) \subseteq T$. This is, any successor set contains $\N$ as a subset. Then using last bullet above, we get that for any successor set $T$
+Suppose we had chosen a different successor set $T$ and had used the same construction to find its smallest successor subset. $S\cap T$ is also a successor set. And, since $S\cap T \subseteq S$,this implies that $\mathbb{N} \subseteq (S\cap T) \subseteq T$. This is, any successor set contains $\mathbb{N}$ as a subset. Then using last bullet above, we get that for any successor set $T$
 
- $\N = \bigcap\{T'\in \mathcal{P}(T) | \emptyset \in T' \wedge (\forall x \in T')((x\cup \{x\})\in T')\}$
+ $\mathbb{N} = \bigcap \{T'\in \mathcal{P}(T) \| \emptyset \in T' \wedge (\forall x \in T')((x\cup \{x\})\in T')\}$
 
-as claimed. The fact that any successor set contains $\N$ as a subset has the following well-known induction principle as an immediate consequence:
+as claimed. The fact that any successor set contains $\mathbb{N}$ as a subset has the following well-known induction principle as an immediate consequence:
 
-> Theorem 2 (Peano Induction) if $T\subseteq \N$ is a successor set, then $T = \N$.
+> Theorem 2 (Peano Induction) if $T\subseteq \mathbb{N}$ is a successor set, then $T = \mathbb{N}$.
 
-It is an indispensable reasoning principle used routinely in many mathematical proofs: to prove that a property $P$ holds for all natural numbers, we consider the subset $T\subseteq \N$ for which $P$ holds; then, if we can show that P(0) (that is, that $0\in T$)and that for each $n\in N$ we have the implication $P(n) \Rightarrow P(s(n))$ (that is, that $n\in T \Rightarrow s(n)\in T$), then we have shown that $P$ holds for all $n\in \N$. Because this means that we have proved that $T$ is a successor set, and then by Peano Induction we must have $T = \N$.
+It is an indispensable reasoning principle used routinely in many mathematical proofs: to prove that a property $P$ holds for all natural numbers, we consider the subset $T\subseteq \mathbb{N}$ for which $P$ holds; then, if we can show that P(0) (that is, that $0\in T$)and that for each $n\in \mathbb{N}$ we have the implication $P(n) \Rightarrow P(s(n))$ (that is, that $n\in T \Rightarrow s(n)\in T$), then we have shown that $P$ holds for all $n\in \mathbb{N}$. Because this means that we have proved that $T$ is a successor set, and then by Peano Induction we must have $T = \mathbb{N}$.
