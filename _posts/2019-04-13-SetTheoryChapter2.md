@@ -1,5 +1,5 @@
 ---
-title: "Set Theory as an Axiomatic Theory"
+title: "Set Theory Chpater2: Set Theory as an Axiomatic Theory"
 categories:
   - Mathematics
 tags:

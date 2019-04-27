@@ -1,5 +1,5 @@
 ---
-title: "The Empty Set, Extensionality, and Seperation"
+title: "Set Theory Chapter3: The Empty Set, Extensionality, and Seperation"
 categories:
   - Mathematics
 tags:
