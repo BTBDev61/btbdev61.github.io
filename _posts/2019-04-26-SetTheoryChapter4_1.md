@@ -21,15 +21,15 @@ Of course, by extensionality, the order of the elements does not matter.
 
 What about ***ordered pairs***? Following an idea of Kuratowski, we can *define* an ordered pair (x, y) as a special kind of unordered pair by means of the defining equation.
 
-$(x, y) = \{\{x\}, \{x, y\}\}$.
+$(x, y) =  \\{  \\{ x  \\},  \\{ x, y  \\}  \\} $.
 
 A key property of ordered pairs is a form of extensionality for such pairs, namely, the following
 
 > Lemma 1 (Extensionlity of Ordered Pairs). For any sets $x, x', y, y'$, the following equivalence holds:
 >
-> $(x, y) = (x', y') \Leftrightarrow (x = x' \vee y = y')$
+> $(x, y) = (x', y') \Leftrightarrow (x = x' \wedge y = y')$
 
-One could reasonably wish to distinguish between the *abstract concept* of an ordered pair $(x, y)$, and a *concrete representation* of that concept, such as the set $\{\{x\}, \{x, y\}\}$. Lemma 1 gives strong evidence that this particular choice of representation faithfully models the abstract notion.
+One could reasonably wish to distinguish between the *abstract concept* of an ordered pair $(x, y)$, and a *concrete representation* of that concept, such as the set $\\{ \\{ x\\} , \\{ x, y\\} \\} $. Lemma 1 gives strong evidence that this particular choice of representation faithfully models the abstract notion.
 
 ---
 
@@ -51,7 +51,7 @@ $(\forall x)(\exists !y)(\forall z)(z\in y \Leftrightarrow (\exists u)(u\in x \w
 
 We introduce the notation $\bigcup x$ to denote the unique set *y* claimed to exist by the above formula, and call it the *union* of the collection of sets *x*.
 
-the $intesection \bigcap x$ of a set $x$ of sets is of course the set of elements that belong to all the elements of $x$, provided $x$ is *not* the empty set. (if $x = \emptyset$ , the intersection is not defined).
+the $intersection \bigcap x$ of a set $x$ of sets is of course the set of elements that belong to all the elements of $x$, provided $x$ is *not* the empty set. (if $x = \emptyset$ , the intersection is not defined).
 
 $\bigcap x = ${$y\in \bigcup x \| (\forall z \in x) y \in z$}
 
@@ -75,7 +75,7 @@ Similarly, the *symmetric difference* of two sets $A \boxplus B$ can be defined 
 
 $A\boxplus B = (A - B) \cup (B - A) $
 
-Of course, with set union, as well as with the other boolean opeartions we can define based on set union by separation. For example, we can associate to any set $A$ another set $s(A)$, called its *successor*, by defining $s(A) = A \cup \{A\}$.
+Of course, with set union, as well as with the other boolean opeartions we can define based on set union by separation. For example, we can associate to any set $A$ another set $s(A)$, called its *successor*, by defining $s(A) = A \cup \\{A\\}$.
 
 In particular, we can consider the sequences of sets
 
