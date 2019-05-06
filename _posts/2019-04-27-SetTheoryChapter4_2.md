@@ -91,3 +91,9 @@ as claimed. The fact that any successor set contains $\mathbb{N}$ as a subset ha
 > Theorem 2 (Peano Induction) if $T\subseteq \mathbb{N}$ is a successor set, then $T = \mathbb{N}$.
 
 It is an indispensable reasoning principle used routinely in many mathematical proofs: to prove that a property $P$ holds for all natural numbers, we consider the subset $T\subseteq \mathbb{N}$ for which $P$ holds; then, if we can show that P(0) (that is, that $0\in T$)and that for each $n\in \mathbb{N}$ we have the implication $P(n) \Rightarrow P(s(n))$ (that is, that $n\in T \Rightarrow s(n)\in T$), then we have shown that $P$ holds for all $n\in \mathbb{N}$. Because this means that we have proved that $T$ is a successor set, and then by Peano Induction we must have $T = \mathbb{N}$.
+
+---
+
+Reference.
+
+* José Meseguer. (2013). Set Theory and Algebra in Computer Science A Gentle Introduction to Mathematical Modeling.
